@@ -9,6 +9,14 @@ app.get("/", (req, res) => {
 	});
 });
 
+app.get("/login", (req, res) => {
+	return res.json({
+		success: true,
+		message: "Your server is up and running login
+			...",
+	});
+});
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
